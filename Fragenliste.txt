@@ -1,0 +1,63 @@
+Kategorie
+    Wer wird Millionär?
+Fragenliste
+    {
+           prompt: "Was dient nicht zur Verhütung?\n(a) Pille\n\ (b) Kondom\n(c) Coitus interruptus\n(d) Glücksspirale",
+           answer: "d"
+     },
+     {
+           prompt: "Was macht der Platzwart von Berufs wegen?\n(a) an der Tube schnüffeln\n\ (b) ein paar Linien ziehen\n(c) sich einen zwitschern\n(d) 'ne Tüte drehen",
+           answer: "b"
+     },
+     {
+           prompt: "Große Heulerei gibt's manchmal auf der Kirmes, wenn Kinder ...?\n(a) desorientiert sind\n\ (b) aus der Spur kommen\n(c) die Balons verlieren\n(d) ins Schwanken geraten",
+           answer: "c"
+     },
+     {
+           prompt: "Wer kann vielleicht schwimmen, aber nicht fliegen?\n(a) Stockenten\n\ (b) Pfeifenten\n(c) Krickenten\n(d) Studenten",
+           answer: "d"
+     },
+     {
+           prompt: "Welcher natürliche Reichtum ist selbst bei ansonsten mittellosen Männern in aller Regel unverkäuflich?\n(a) Tafelsilber\n\ (b) Goldreserve\n(c) Kronjuwelen\n(d) Fabergé-Eier",
+           answer: "c"
+     },
+     {
+           prompt: "Wie bezeichnet man Wandmalerei auf feuchtem Kalkputz?\n(a) Fiasko\n\ (b) Fresko\n(c) Fiesta\n(d) Frisco",
+           answer: "b"
+     },
+     {
+           prompt: "Wer weiß wohl am ehesten, was mit Jumpsuit gemeint ist?\n(a) Modekenner\n\ (b) Börsen-Spekulanten\n(c) Stabhochspringer\n(d) Autoverkäufer",
+           answer: "a"
+     },
+     {
+           prompt: "Von welchem nur 321 Meter hohen Berg wird behauptet, der meistbestiegene Europas zu sein?\n(a) Brocken\n\ (b) Drachenfels\n(c) Feldberg\n(d) Zugspitze",
+           answer: "b"
+     },
+     {
+           prompt: "Welche dieser legendären Brücken kann man nicht mit dem Auto passieren?\n(a) Rialtobrücke\n\ (b) Pont Neuf\n(c) Golden Gate Bridge\n(d) Öresundbrücke",
+           answer: "a"
+     },
+     {
+           prompt: "Was bedeutet der Name der italienischen Nachspeise Tiramisu wörtlich?\n(a) süß und köstlich\n\ (b) zieh mich hoch\n(c) das macht dick\n(d) Leckermäulchen",
+           answer: "b"
+     },
+     {
+           prompt: "Wie viel Meter legt man zurück, während man im Auto bei 120 km/h für drei Sekunden auf sein Handy schaut?\n(a) ungefähr 15 Meter\n\ (b) knapp 30 Meter\n(c) etwa 50 Meter\n(d) rund 100 Meter",
+           answer: "d"
+     },
+     {
+           prompt: "Welches dieser Bundesländer war noch nie mit einem Verein in der Ersten Fußball-Bundesliga der Herren vertreten?\n(a) Saarland\n\ (b) Rheinland-Pfalz\n(c) Schleswig-Holstein\n(d) Hessen",
+           answer: "c"
+     },
+     {
+           prompt: "Wer ist laut Grundgesetz der Vertreter des Bundespräsidenten?\n(a) Vizebundespräsident\n\ (b) Bundesratspräsident\n(c) Bundestagspräsident\n(d) Bundeskanzler",
+           answer: "b"
+     },
+     {
+           prompt: "Welcher Kinderbuchheld entpuppt sich als Nachfahre von einem der Heiligen Drei Könige?\n(a) Harry Potter\n\ (b) Peter Pan\n(c) Jim Knopf\n(d) Pippi Langstrumpf",
+           answer: "c"
+     },
+     {
+           prompt: "Mit der Drake-Gleichung berechnet man die Wahrscheinlichkeit von ...?\n(a) Vierlingsgeburten\n\ (b) Erdbeben\n(c) Lottogewinnen\n(d) außerirdischer Intelligenz",
+           answer: "d"
+     }
