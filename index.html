@@ -1,144 +1,319 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Endlich 18!</title>
-    <!-- Add icon library -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <style>
-     .btn {
-      background-color: DodgerBlue;
-      border: none;
-      color: white;
-      padding: 12px 30px;
-      cursor: pointer;
-      font-size: 20px;
-     }
-     /* Darker background on mouse-over */
-     .btn:hover {
-      background-color: RoyalBlue;
-     }
-     </style>
+
 </head>
+
 <body>
+
     <p>
+
         <h1>Herausforderung 3. Tag</h1>
+
         Hallo Alex, <br>
+
        nachdem du alles bislang l&ouml;sen konntest und auch scheinbar das Quiz dich nicht aufhalten konnte, hoffe ich, dass es dich mehr herausfordert!<br>
+
         F&uuml;r diese Aufgabe ben&ouml;tigst du neben deinem Coumputer auch noch deinen Verstand und kleine Programmierf&auml;higkeiten. Deine Aufgabe: <br>
+
         <br>
+
         Du bekommst den Quelltext und folgendes Problem: <br>
+
         Modifiziere den Quelltext so, dass das man auf "Los geht es!" dr&uuml;ckt, um das Quiz zu starten, und vor dem Quiz erstmal eine Fragekategorie ausgewählt werden muss. <br>
+
         Die Fragen der 2. Kategorie findest du im Quelltext (alles zusammen als Kommentar). Au&szlig;erdem fordere ich dich heraus, eine 3. Kategorie zu erstellen. 
+        
         <br>
-         Falls du dann noch Lust hast, kannst du gerne mit CSS alles ein wenig sch&ouml;ner gestalten. <br>
+        
+        Falls du dann noch Lust hast, kannst du gerne mit CSS alles ein wenig sch&ouml;ner gestalten. <br>
+
         <br>
-        Du hast f&uuml;r die L&ouml;sung des Problems bis &uuml;bermorgen um 12 Uhr Zeit. <br>
+
+        Du hast f&uuml;r die L&ouml;sung des Problems bis morgen Abend um 19 Uhr Zeit. <br>
+
         <br>
+
         <br>
+
         PS: Ja, mir ist aufgefallen, dass das erste Mal die URL falsch geschrieben war. Es hei&szlig;t nat&uuml;rlich challenge.
+
         <p id="demo"></p>
+      <br>
+        <p id="start">
+          <button onclick="myFunction()">Los geht es! mit HTML</button> 
+          </p>
+          <br>
+          <p id="startb">
+          <button onclick="myFunctionb()">Wer wird Millionär</button> 
+          </p>
+            <br>
+          <p id="startc">
+          <button onclick="myFunctionc()">Los geht es! mit c</button> 
+          </p>
+          <br>
         <script>
+
             // Set the date we're counting down to
-            var countDownDate = new Date("Jun 10, 2020 12:00:00").getTime();
+
+            var countDownDate = new Date("Jun 9, 2020 19:00:00").getTime();
+
+            
 
             // Update the count down every 1 second
+
             var x = setInterval(function() {
-                 
-            // Get today's date and time
-            var now = new Date().getTime();
-          
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+
             
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
-            
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                 clearInterval(x);
-                 document.getElementById("demo").innerHTML = "Die Zeit ist um! Hier (https://bday-tech.github.io/4thchallenge) geht es weiter.";
-               }
-          }, 1000);
+
+              // Get today's date and time
+
+              var now = new Date().getTime();
+
+                
+
+              // Find the distance between now and the count down date
+
+              var distance = countDownDate - now;
+
+                
+
+              // Time calculations for days, hours, minutes and seconds
+
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                
+
+              // Output the result in an element with id="demo"
+
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+
+              + minutes + "m " + seconds + "s ";
+
+                
+
+              // If the count down is over, write some text 
+
+              if (distance < 0) {
+
+                clearInterval(x);
+
+                document.getElementById("demo").innerHTML = "Die Zeit ist um! Hier (https://bday-tech.github.io/2ndquiz/) geht es weiter.";
+
+              }
+
+            }, 1000);
           </script>
-     </p>
-     <p>
-          Download Fragenliste.txt <br>
-          <button class="btn"><i class="fa fa-download"></i><a href="Fragenliste.txt" download="Fragenliste.txt">Download</a></button>
-     </p>
-     :)
-     <p>
-          <!--
-               var questions = [
-                {
-                    prompt: "Was schafft die Struktur der Website?\n(a) HTML\n\ (b) CSS\n(c) JavaScrips",
-                    answer: "a"
-                    },
-               {
-                    prompt: "In welchem Tag steht der Inhalt der Website?\n(a) HTML\n\ (b) Head\n(c) Body",
-                    answer: "c"
-               },
-               {
-                    prompt: "Ist HTML5 der aktuelle Standart?\n(a) Ja\n\ (b) Nein, HTML 5 gibt es noch gar nicht. Es ist noch in Entwicklung\n(c) Nein, es ist die aktuellste Version, wird aber kaum verwendet.",
-                    answer: "a"
-               },
-               {
-                    prompt:  "Wo stellt man den Titel der Website ein?\n(a) Heading\n\ (b) Head\n(c) Body",
-                    answer: "b"
-               },
-               {
-                    prompt:  "Was ist CSS ausgeschrieben?\n(a) Code Style Sheets\n\ (b) Cascade Style Source\n(c) Cascade Style Sheets",
-                    answer: "c"
-                },
-               {
-                    prompt:  "Welchen Zweck hat <canvas>?\n(a) erzeugt Leinwand\n\ (b) erstellt Datenbank\n(c) ersetzt Flash Player",
-                    answer: "a"
-               },
-               {
-                    prompt:  "Werden Tabellen zur Formatierung genutzt?\n(a) Ja, aber nur bei veralteten Websites\n\ (b)Ja, generell\n(c) Nein",
-                    answer: "a"
-               },
-               {
-                    prompt:  "An welche Programmiersprache ist JavaScripts entfernt angelehnt?\n(a) Java\n\ (b) C++\n(c) Python",
-                    answer: "b"
-               },
-               {
-                    prompt:  "Was ist Reverse Engineering?\n(a) Ein Fachbereich in der Website Entwicklung\n\ (b) Ein Fachbereich der Datenanalyse\n(c) Ein Fachbereich der Websitanalyse",
-                    answer: "b"
-               },
-               {
-                    prompt:  "Was ist HTML ausgeschrieben?\n(a) HyperText Makeup Language\n\ (b) HyperTool Makeup Language\n(c) HyperText Markup Language",
-                    answer: "c"
-               }
-               ];
 
-          var score = 0;
+            <script>
+                 var questions = [
+     {
+           prompt: "Was schafft die Struktur der Website?\n(a) HTML\n\ (b) CSS\n(c) JavaScrips",
+           answer: "a"
+     },
+     {
+          prompt: "In welchem Tag steht der Inhalt der Website?\n(a) HTML\n\ (b) Head\n(c) Body",
+          answer: "c"
+     },
+     {
+          prompt: "Ist HTML5 der aktuelle Standart?\n(a) Ja\n\ (b) Nein, HTML 5 gibt es noch gar nicht. Es ist noch in Entwicklung\n(c) Nein, es ist die aktuellste Version, wird aber kaum verwendet.",
+          answer: "a"
+     },
+     {
+         prompt:  "Wo stellt man den Titel der Website ein?\n(a) Heading\n\ (b) Head\n(c) Body",
+         answer: "b"
+     },
+     {
+         prompt:  "Was ist CSS ausgeschrieben?\n(a) Code Style Sheets\n\ (b) Cascade Style Source\n(c) Cascade Style Sheets",
+         answer: "c"
+    },
+    {
+         prompt:  "Welchen Zweck hat <canvas>?\n(a) erzeugt Leinwand\n\ (b) erstellt Datenbank\n(c) ersetzt Flash Player",
+         answer: "a"
+    },
+    {
+         prompt:  "Werden Tabellen zur Formatierung genutzt?\n(a) Ja, aber nur bei veralteten Websites\n\ (b)Ja, generell\n(c) Nein",
+         answer: "a"
+    },
+    {
+         prompt:  "An welche Programmiersprache ist JavaScripts entfernt angelehnt?\n(a) Java\n\ (b) C++\n(c) Python",
+         answer: "b"
+    },
+    {
+         prompt:  "Was ist Reverse Engineering?\n(a) Ein Fachbereich in der Website Entwicklung\n\ (b) Ein Fachbereich der Datenanalyse\n(c) Ein Fachbereich der Websitanalyse",
+         answer: "b"
+    },
+    {
+         prompt:  "Was ist HTML ausgeschrieben?\n(a) HyperText Makeup Language\n\ (b) HyperTool Makeup Language\n(c) HyperText Markup Language",
+         answer: "c"
+    }
+];
 
-          for(var i = 0; i < questions.length; i++){
-          var response = window.prompt(questions[i].prompt);
+var questionsb = [
+{
+           prompt: "Was dient nicht zur Verhütung?\n(a) Pille\n\ (b) Kondom\n(c) Coitus interruptus\n(d) Glücksspirale",
+           answer: "d"
+     },
+     {
+           prompt: "Was macht der Platzwart von Berufs wegen?\n(a) an der Tube schnüffeln\n\ (b) ein paar Linien ziehen\n(c) sich einen zwitschern\n(d) 'ne Tüte drehen",
+           answer: "b"
+     },
+     {
+           prompt: "Große Heulerei gibt's manchmal auf der Kirmes, wenn Kinder ...?\n(a) desorientiert sind\n\ (b) aus der Spur kommen\n(c) die Balons verlieren\n(d) ins Schwanken geraten",
+           answer: "c"
+     },
+     {
+           prompt: "Wer kann vielleicht schwimmen, aber nicht fliegen?\n(a) Stockenten\n\ (b) Pfeifenten\n(c) Krickenten\n(d) Studenten",
+           answer: "d"
+     },
+     {
+           prompt: "Welcher natürliche Reichtum ist selbst bei ansonsten mittellosen Männern in aller Regel unverkäuflich?\n(a) Tafelsilber\n\ (b) Goldreserve\n(c) Kronjuwelen\n(d) Fabergé-Eier",
+           answer: "c"
+     },
+     {
+           prompt: "Wie bezeichnet man Wandmalerei auf feuchtem Kalkputz?\n(a) Fiasko\n\ (b) Fresko\n(c) Fiesta\n(d) Frisco",
+           answer: "b"
+     },
+     {
+           prompt: "Wer weiß wohl am ehesten, was mit Jumpsuit gemeint ist?\n(a) Modekenner\n\ (b) Börsen-Spekulanten\n(c) Stabhochspringer\n(d) Autoverkäufer",
+           answer: "a"
+     },
+     {
+           prompt: "Von welchem nur 321 Meter hohen Berg wird behauptet, der meistbestiegene Europas zu sein?\n(a) Brocken\n\ (b) Drachenfels\n(c) Feldberg\n(d) Zugspitze",
+           answer: "b"
+     },
+     {
+           prompt: "Welche dieser legendären Brücken kann man nicht mit dem Auto passieren?\n(a) Rialtobrücke\n\ (b) Pont Neuf\n(c) Golden Gate Bridge\n(d) Öresundbrücke",
+           answer: "a"
+     },
+     {
+           prompt: "Was bedeutet der Name der italienischen Nachspeise Tiramisu wörtlich?\n(a) süß und köstlich\n\ (b) zieh mich hoch\n(c) das macht dick\n(d) Leckermäulchen",
+           answer: "b"
+     },
+     {
+           prompt: "Wie viel Meter legt man zurück, während man im Auto bei 120 km/h für drei Sekunden auf sein Handy schaut?\n(a) ungefähr 15 Meter\n\ (b) knapp 30 Meter\n(c) etwa 50 Meter\n(d) rund 100 Meter",
+           answer: "d"
+     },
+     {
+           prompt: "Welches dieser Bundesländer war noch nie mit einem Verein in der Ersten Fußball-Bundesliga der Herren vertreten?\n(a) Saarland\n\ (b) Rheinland-Pfalz\n(c) Schleswig-Holstein\n(d) Hessen",
+           answer: "c"
+     },
+     {
+           prompt: "Wer ist laut Grundgesetz der Vertreter des Bundespräsidenten?\n(a) Vizebundespräsident\n\ (b) Bundesratspräsident\n(c) Bundestagspräsident\n(d) Bundeskanzler",
+           answer: "b"
+     },
+     {
+           prompt: "Welcher Kinderbuchheld entpuppt sich als Nachfahre von einem der Heiligen Drei Könige?\n(a) Harry Potter\n\ (b) Peter Pan\n(c) Jim Knopf\n(d) Pippi Langstrumpf",
+           answer: "c"
+     },
+     {
+           prompt: "Mit der Drake-Gleichung berechnet man die Wahrscheinlichkeit von ...?\n(a) Vierlingsgeburten\n\ (b) Erdbeben\n(c) Lottogewinnen\n(d) außerirdischer Intelligenz",
+           answer: "d"
+     }
+];
 
-          if(response == questions[i].answer){
-          score++;
-          alert("Richtig!");
-          } else {
-          alert("Leider falsch!");
-          }
-          }
-          
-          alert("Du hast " + score + "/" + questions.length + "Fragen richtig!");
-          
-          if(score==questions.lenght){
-          alert("Congrats, du hast es geschafft! Unter https://github.com/bday-tech/3rdchallenge geht es morgen weiter!")
-     }-->
+var score = 0;
+
+function myFunction	() {
+    for(var i = 0; i < questions.length; i++){
+         var response = window.prompt(questions[i].prompt);
+         if(response == questions[i].answer){
+              score++;
+              alert("Richtig!");
+         } else{
+          //     alert("Leider falsch!");
+         }
+
+         if(response !== questions[i].answer){
+               alert("Leider falsch!");
+         } else{
+              
+         }
+    }
+    alert("Du hast " + score + "/" + questions.length + "Fragen richtig!");
+    if(score!==0 && score!==1 && score!==2 && score!==3 && score!==4 && score!==5 && score!==6 && score!==7 && score!==8 && score!==9){
+    
+    alert("Congrats, du hast es geschafft! Unter https://github.com/bday-tech/3rdchallenge geht es morgen weiter!");
+     }
+}
+
+function myFunctionb	() {
+    for(var i = 0; i < questionsb.length; i++){
+         var response = window.prompt(questionsb[i].prompt);
+         if(response == questionsb[i].answer){
+              score++;
+              alert("Richtig!");
+         } else{
+          //     alert("Leider falsch!");
+         }
+
+         if(response !== questionsb[i].answer){
+               alert("Leider falsch!");
+         } else{
+              
+         }
+    }
+    alert("Du hast " + score + "/" + questionsb.length + "Fragen richtig!");
+    if(score!==0 && score!==1 && score!==2 && score!==3 && score!==4 && score!==5 && score!==6 && score!==7 && score!==8 && score!==9){
+    
+    alert("Congrats, du hast es geschafft! Unter https://github.com/bday-tech/3rdchallenge geht es morgen weiter!");
+     }
+}
+function myFunctionc	() {
+    for(var i = 0; i < questionsc.length; i++){
+         var response = window.prompt(questionsc[i].prompt);
+         if(response == questionsc[i].answer){
+              score++;
+              alert("Richtig!");
+         } else{
+          //     alert("Leider falsch!");
+         }
+
+         if(response !== questionsc[i].answer){
+               alert("Leider falsch!");
+         } else{
+              
+         }
+    }
+    alert("Du hast " + score + "/" + questionsc.length + "Fragen richtig!");
+    if(score!==0 && score!==1 && score!==2 && score!==3 && score!==4 && score!==5 && score!==6 && score!==7 && score!==8 && score!==9){
+    
+    alert("Congrats, du hast es geschafft! Unter https://github.com/bday-tech/3rdchallenge geht es morgen weiter!");
+     }
+}
+
+
+            </script>
+
     </p>
+            :)
+    <p>
+        
+            
+
+
+
+     
+    </p>
+
 </body>
+
 </html>
